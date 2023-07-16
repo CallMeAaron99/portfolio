@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../scss/_contact.scss","../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss"],"names":[],"mappings":"AAIA;EACI;EACA;;ACsEA;EDxEJ;IAKQ;;;;AAIR;EACI","file":"contact.component.css"}
+{"version":3,"sourceRoot":"","sources":["../../assets/scss/_contact.scss","../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss"],"names":[],"mappings":"AAIA;EACI;EACA;;ACsEA;EDxEJ;IAKQ;;;;AAIR;EACI","file":"contact.component.css"}

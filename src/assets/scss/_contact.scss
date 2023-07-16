@@ -1,12 +1,12 @@
-@import '../../node_modules/bootstrap/scss/functions';
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
 
 .form-container {
     border-radius: 1rem;
     width: 75%;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         width: 95%;
     }
 }
