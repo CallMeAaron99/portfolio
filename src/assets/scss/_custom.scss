@@ -1,0 +1,40 @@
+$indigo: #6610f2;
+
+$primary: $indigo;
+
+.section-padding {
+    padding: 7rem 0;
+}
+
+.heading {
+    margin-bottom: 7rem;
+
+    &--title {
+        display: block;
+        font-size: 3rem;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+    }
+
+    &--line::after {
+        content: '';
+        height: 0.25rem;
+        width: 2.25rem;
+        margin: 1.25rem auto;
+        display: block;
+        background: $primary;
+        border-radius: 5px;
+    }
+
+    &--description {
+        display: block;
+        font-size: 1.25rem;
+        font-weight: 400;
+        max-width: 60%;
+        line-height: 1.6;
+        margin: 0 auto;
+    }
+}
+
+// IMPORT BOOTSTRAP
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

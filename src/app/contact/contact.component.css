@@ -1,0 +1,16 @@
+.form-container {
+  border-radius: 1rem;
+  width: 75%;
+}
+
+@media (max-width: 991.98px) {
+  .form-container {
+    width: 95%;
+  }
+}
+
+#message {
+  min-height: 16rem;
+}
+
+/*# sourceMappingURL=contact.component.css.map */

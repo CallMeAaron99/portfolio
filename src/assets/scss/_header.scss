@@ -1,0 +1,30 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+
+.navbar-brand {
+    font-size: 2.25rem;
+    padding: 0;
+
+    @include media-breakpoint-down(lg) {
+        margin: auto;
+    }
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.dropdown-item {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.menu {
+    @include media-breakpoint-up(lg) {
+        gap: 1.5rem;
+        margin: auto;
+    }
+}

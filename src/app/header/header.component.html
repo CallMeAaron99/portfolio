@@ -1,9 +1,9 @@
-<header class="fixed-top py-2 bg-body-secondary">
+<header class="bg-secondary-subtle shadow fixed-top">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="d-lg-none" style="width: 2.25rem;"></div>
+            <!-- <div class="d-lg-none" style="width: 2.25rem;"></div> -->
 
-            <h1>Aaron</h1>
+            <a href="/" class="navbar-brand">Aaron</a>
 
             <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
@@ -11,9 +11,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="offcanvas-lg offcanvas-end flex-grow-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
-                <div class="offcanvas-header px-4 pb-0">
-                    <h1 class="offcanvas-title" id="bdNavbarOffcanvasLabel">Aaron</h1>
+            <div class="offcanvas-lg offcanvas-end flex-grow-1 bg-secondary-subtle" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+                <div href="/" class="offcanvas-header px-4 pb-0">
+                    <a class="navbar-brand" id="bdNavbarOffcanvasLabel">Aaron</a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
                         data-bs-target="#bdNavbar"></button>
                 </div>
@@ -22,16 +22,16 @@
                     <hr class="d-lg-none">
                     <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav menu">
                         <li class="nav-item col-6 col-lg-auto">
-                            <a class="nav-link py-2 px-0 px-lg-2" href="/">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item col-6 col-lg-auto">
-                            <a class="nav-link py-2 px-0 px-lg-2" href="#about">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item col-6 col-lg-auto">
-                            <a class="nav-link py-2 px-0 px-lg-2" href="#projects">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item col-6 col-lg-auto">
-                            <a class="nav-link py-2 px-0 px-lg-2" href="#contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
 
@@ -39,7 +39,7 @@
 
                     <ul class="navbar-nav flex-row flex-wrap ms-lg-auto">
                         <li class="nav-item col-6 col-lg-auto">
-                            <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/sleeper99" target="_blank"
+                            <a class="nav-link" href="https://github.com/sleeper99" target="_blank"
                                 rel="noopener">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
@@ -51,8 +51,8 @@
                         </li>
 
                         <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-                            <hr class="d-lg-none my-2 text-white-50">
+                            <div class="vr d-none d-lg-flex h-100 mx-lg-2"></div>
+                            <hr class="d-lg-none my-2">
                         </li>
 
                         <li class="nav-item dropdown">
