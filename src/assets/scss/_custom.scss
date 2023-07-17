@@ -3,11 +3,11 @@ $indigo: #6610f2;
 $primary: $indigo;
 
 .section-padding {
-    padding: 7rem 0;
+    padding: 5rem 0;
 }
 
 .heading {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 
     &--title {
         display: block;
@@ -37,4 +37,4 @@ $primary: $indigo;
 }
 
 // IMPORT BOOTSTRAP
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
