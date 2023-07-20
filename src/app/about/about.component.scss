@@ -1,9 +1,10 @@
-.about-title {
-    margin-bottom: 2rem;
-}
-
 .lead {
-    margin-bottom: 2rem;
+    font-weight: 400;
+
+    a {
+        font-weight: 400;
+        --bs-icon-link-transform: translate3d(0, -.125rem, 0);
+    }
 }
 
 .skills {
@@ -13,8 +14,6 @@
 
     &--skill {
         padding: 0.125rem 1rem;
-        font-size: 1.6rem;
-        font-weight: 500;
         border-radius: 0.5rem;
         text-transform: capitalize;
     }

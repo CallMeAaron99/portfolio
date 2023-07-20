@@ -1,3 +1,13 @@
+.card {
+    .card-img-top {
+        aspect-ratio: 1/1;
+    }
+
+    .card-text {
+        height: 7rem;
+    }
+}
+
 .tools {
     display: flex;
     flex-wrap: wrap;
@@ -5,8 +15,6 @@
 
     &--tool {
         padding: 0.125rem 0.65rem;
-        font-size: 1rem;
-        font-weight: 500;
         text-transform: capitalize;
     }
 }

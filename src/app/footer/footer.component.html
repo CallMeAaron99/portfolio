@@ -2,14 +2,13 @@
     <div class="container">
         <div class="footer-top row g-3 justify-content-between border-bottom py-5">
             <div class="col-md-5">
-                <h4>Arron</h4>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt excepturi recusandae
-                    vel commodi pariatur. Enim quis minima cumque totam? Eaque, eligendi illum facilis totam debitis
-                    laborum fugiat ipsa dignissimos!</p>
+                <h4>Aaron Hong</h4>
+                <p class="lead">A backend developer specializes in building robust and scalable server-side
+                    applications</p>
             </div>
             <div class="col-md-3">
                 <h4>Social</h4>
-                <a class="nav-link" href="https://github.com/sleeper99" target="_blank" rel="noopener">
+                <a [href]="links.github" class="link-light social-link" target="_blank" ref="noopener">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-github" viewBox="0 0 16 16">
                         <path
@@ -17,12 +16,20 @@
                     </svg>
                     <small class="d-lg-none ms-2">GitHub</small>
                 </a>
+                <a [href]="links.emailTo" class="link-light social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <small class="d-lg-none ms-2">Email</small>
+                </a>
             </div>
         </div>
         <div class="footer-bottom text-center py-5">
-
             © Copyright 2023. Made by
-            <a rel="noreferrer" target="_blank" href="#">Aaron</a>
+            <a class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover"
+                ref="noreferrer" target="_blank" href="#">Aaron Hong</a>
         </div>
     </div>
 </footer>

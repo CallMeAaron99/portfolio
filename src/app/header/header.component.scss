@@ -1,0 +1,39 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.nav-container {
+    width: 80%;
+
+    @include media-breakpoint-down(xxl) {
+        width: 100%;
+    }
+
+}
+
+.navbar-brand {
+    font-size: calc(1.3rem + 0.6vw);
+
+    @include media-breakpoint-down(lg) {
+        margin: auto;
+    }
+}
+
+.nav-link {
+    font-size: calc(1.275rem + 0.3vw);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.dropdown-item {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav {
+
+    @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
