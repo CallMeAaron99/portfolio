@@ -12,6 +12,8 @@
 }
 
 .home-section {
+    min-height: 41rem;
+    max-height: 61rem;
     height: 100vh;
     position: relative;
 }
@@ -38,6 +40,10 @@
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 }
 
 .m_scroll_arrows {

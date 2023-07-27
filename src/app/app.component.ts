@@ -24,11 +24,6 @@ export class AppComponent implements OnInit {
         this.themeService.setTheme(this.themeService.getPreferredTheme());
       }
     });
-
-    // set language
-    if (!window.location.pathname.includes(this.langService.getPreferredLang())) {
-      this.langService.setLang(this.langService.getPreferredLang());
-    }
   }
 
 }

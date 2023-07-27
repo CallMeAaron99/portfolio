@@ -14,9 +14,9 @@ export class LangService {
       return storedLang;
     }
 
-    const userLanguage = navigator.languages[1];
-    if (userLanguage === 'zh') {
-      if (navigator.language === 'zh-TW' || navigator.language === 'zh-HK') {
+    const userLanguage = navigator.language || navigator.languages[0];
+    if (userLanguage.startsWith('zh')) {
+      if (userLanguage === 'zh-TW' || userLanguage === 'zh-HK') {
         return 'zh-TW';
       }
       return 'zh-CN';
@@ -25,7 +25,7 @@ export class LangService {
   }
 
   setLang = (lang: string): void => {
-    window.location.assign('/' + lang);
+    window.location.replace('/' + lang);
   }
-  
+
 }

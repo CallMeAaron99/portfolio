@@ -19,6 +19,7 @@ export class HeaderComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     showActiveTheme(this.themeService.getPreferredTheme());
+    console.log(this.langService.getPreferredLang());
     showActiveLang(this.langService.getPreferredLang());
   }
 
