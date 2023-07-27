@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-
-import linkJson from '../../assets/json/links.json';
+import { Component, SkipSelf } from '@angular/core';
+import { AuthorInfoService } from '../services/author-info.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +7,9 @@ import linkJson from '../../assets/json/links.json';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  links = linkJson;
+
+  authorInfo$ = this.authorInfoService.getAuthorInfo$;
+  
+  constructor(@SkipSelf() private authorInfoService: AuthorInfoService) { }
+
 }

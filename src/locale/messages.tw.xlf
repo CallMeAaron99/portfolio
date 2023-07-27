@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3562199946446423606" datatype="html">
+        <source>About me</source>
+        <target>關於我</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1669212330118000760" datatype="html">
+        <source>Here you will find more information about me and my skills in programming and technology</source>
+        <target>在這裡您可以找到更多關於我以及我在編程和技術方面的信息</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2658841788291945079" datatype="html">
+        <source>More about me!</source>
+        <target>更多關於我的信息！</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2589895786754244834" datatype="html">
+        <source>I&apos;m a </source>
+        <target>我是一個</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7044658640577316445" datatype="html">
+        <source>full-stack developer</source>
+        <target>全棧工程師</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8147120483222025018" datatype="html">
+        <source>, I have a strong understanding of the entire web development process, from designing and building frontend user interfaces to implementing backend server-side logic. Check out some of my work in the </source>
+        <target>, 我對整個網絡應用開發過程有很深的了解，從設計和構建前端用戶界面到實現後端服務界面到實現後台服務器端邏輯。查看我的</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">14,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3840356280103599377" datatype="html">
+        <source>/en-US#projects</source>
+        <target>/zh-TW#projects</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7091571651222742304" datatype="html">
+        <source>Projects</source>
+        <target>項目</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8545725361065754086" datatype="html">
+        <source> section.</source>
+        <target>。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="898646336251277527" datatype="html">
+        <source>I&apos;m open to </source>
+        <target>我正在尋找</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1895957424873987405" datatype="html">
+        <source>Job</source>
+        <target>工作</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9021066113319403380" datatype="html">
+        <source>opportunities where I can contribute my skills and experience. If you have a position that you believe would be a good fit, please don&apos;t hesitate to </source>
+        <target>機會，我可以貢獻我的技能和經驗。如果您認為有適合我的職位，請隨時與我</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="409239554269769354" datatype="html">
+        <source>/en-US#contact</source>
+        <target>/zh-TW#contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target>聯繫</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2405261957659302616" datatype="html">
+        <source> me.</source>
+        <target>。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6723594190433753160" datatype="html">
+        <source>For additional information, please feel free to review my </source>
+        <target>如需了解更多信息，請隨時檢視我的</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6815138917010386043" datatype="html">
+        <source>/en-US/assets/resume.pdf</source>
+        <target>/zh-TW/assets/resume.pdf</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7182974689040833178" datatype="html">
+        <source>Resume</source>
+        <target>履歷</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8060976976079359371" datatype="html">
+        <source>.</source>
+        <target>。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="634390376712343582" datatype="html">
+        <source>My Skills</source>
+        <target>我的技能</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1737753151350322492" datatype="html">
+        <source><x id="PH" equiv-text="this.title"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">15</context>
+
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2838582778953513957" datatype="html">
+        <source>Please feel free to contact me by sending an email using the form provided below. I will get back to you as soon as possible</source>
+        <target>請使用下面提供的表單發送電子郵件與我聯繫。我會儘快給您回復</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target>姓名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="776428777159750815" datatype="html">
+        <source>Please enter your name</source>
+        <target>請輸入您的姓名</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3967269098753656610" datatype="html">
+        <source>Email address</source>
+        <target>電子郵箱</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4799959393793820578" datatype="html">
+        <source>Please enter your email</source>
+        <target>請輸入您的電子郵箱</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953922545004329220" datatype="html">
+        <source>Email format invalid</source>
+        <target>電子郵箱格式不正確</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8066608938393600549" datatype="html">
+        <source>Message</source>
+        <target>消息</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="631102939118043057" datatype="html">
+        <source>Please enter your message</source>
+        <target>請輸入您的消息</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6490688569532630280" datatype="html">
+        <source>Send</source>
+        <target>發送</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4836615552094365703" datatype="html">
+        <source>Success!</source>
+        <target>成功！</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3523837343200846109" datatype="html">
+        <source>A full-stack developer specializes in building complete web applications</source>
+        <target>一個全棧工程師擅長於開發完整的網絡應用程序</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4579496777570550463" datatype="html">
+        <source>Social</source>
+        <target>社交</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="570182506280954960" datatype="html">
+        <source>/en-US</source>
+        <target>/zh-TW</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target>首頁</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6251197375650596561" datatype="html">
+        <source>/en-US#about</source>
+        <target>/zh-TW#about</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target>關於</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4156810045795717114" datatype="html">
+        <source>Language: </source>
+        <target>語言：</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7720854767357271369" datatype="html">
+        <source>Switch theme</source>
+        <target>切換主題：</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4198270001810141041" datatype="html">
+        <source>OS Default</source>
+        <target>系統默認</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3892161059518616136" datatype="html">
+        <source>Dark</source>
+        <target>深色</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="413116577994876478" datatype="html">
+        <source>Light</source>
+        <target>淺色</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8490414350093988987" datatype="html">
+        <source>Hey there! I&apos;m </source>
+        <target>您好！我是 Aaron Hong</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3966473792639259834" datatype="html">
+        <source>A full-stack developer specializes in building complete web applications, from the frontend user interface to the backend server-side logic</source>
+        <target>一個全棧工程師擅長於開發完整的網絡應用程序，從前端用戶界面到後端服務器端邏輯</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3836000317327860441" datatype="html">
+        <source>projects</source>
+        <target>項目</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6918024729987627667" datatype="html">
+        <source>Here you will find a selection of projects that I have developed. Each project contains its description, including the technologies and tools utilized, as well as links to live demos and source code on GitHub</source>
+        <target>在這裡，您可以找到我開發的項目。每個項目都包含其說明、包括所使用的技術和工具，以及 Demo 鏈接和 GitHub 上的源代碼鏈接</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="919133713232396432" datatype="html">
+        <source>thumbnail</source>
+        <target>圖片</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5886792202999625261" datatype="html">
+        <source>Demo</source>
+        <target>Demo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8186013988289067040" datatype="html">
+        <source>Code</source>
+        <target>源代碼</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,21 +1,15 @@
-import { Component, OnInit, SkipSelf } from '@angular/core';
-import { AboutService } from './services/about.service';
+import { Component, SkipSelf } from '@angular/core';
+import { SkillsService } from '../services/skills.service';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
-  skills: string[] = [];
+  skills$ = this.skillsService.getSkills$;
 
-  constructor(@SkipSelf() private aboutService: AboutService) { }
-
-  ngOnInit(): void {
-    this.aboutService.getSkills().subscribe(skills => {
-      this.skills = skills;
-    });
-  }
+  constructor(@SkipSelf() private skillsService: SkillsService) { }
 
 }

@@ -14,3 +14,10 @@
 #message {
     min-height: 16rem;
 }
+
+.toast-container{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}

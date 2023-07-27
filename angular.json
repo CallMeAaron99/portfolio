@@ -4,6 +4,13 @@
   "newProjectRoot": "projects",
   "projects": {
     "Portfolio": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "zh-CN": "src/locale/messages.cn.xlf",
+          "zh-TW": "src/locale/messages.tw.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +24,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/portfolio",
+            "localize": [
+              "zh-CN",
+              "zh-TW"
+            ],
+            "outputPath": "backend/static",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -33,7 +44,9 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/js/toast.js",
+              "src/assets/js/offcanvas.js"
             ]
           },
           "configurations": {
@@ -58,7 +71,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"

@@ -1,22 +1,15 @@
-import { Component, OnInit, SkipSelf } from '@angular/core';
-import { Project } from './projects';
-import { ProjectsService } from './services/projects.service';
+import { Component, SkipSelf } from '@angular/core';
+import { ProjectsService } from '../services/projects.service';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
 
-  projects: Project[] = [];
+  projects$ = this.projectService.getProjects$;
 
   constructor(@SkipSelf() private projectService: ProjectsService) { }
-
-  ngOnInit(): void {
-    this.projectService.getProjects().subscribe(projects => {
-      this.projects = projects;
-    });
-  }
 
 }

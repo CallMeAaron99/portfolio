@@ -1,58 +1,51 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, SkipSelf } from '@angular/core';
+import { ThemeService } from '../services/theme.service';
+import { LangService } from '../services/lang.service';
+import { AuthorInfoService } from '../services/author-info.service';
 
-import linkJson from '../../assets/json/links.json';
+declare function hideOffcanvas(offcanvasId: string): void;
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-
 export class HeaderComponent implements AfterViewInit {
 
-  links = linkJson;
+  offcanvasId: string = 'bdNavbar';
+  authorInfo$ = this.authorInfoService.getAuthorInfo$;
+
+  constructor(@SkipSelf() private themeService: ThemeService, @SkipSelf() private langService: LangService, @SkipSelf() private authorInfoService: AuthorInfoService) { }
 
   ngAfterViewInit(): void {
-    showActiveTheme(getPreferredTheme());
+    showActiveTheme(this.themeService.getPreferredTheme());
+    showActiveLang(this.langService.getPreferredLang());
   }
 
-  onThemeBtnClicked(theme: string): void {
-    setStoredTheme(theme);
-    setTheme(theme);
+  onNavClick = (): void => hideOffcanvas(this.offcanvasId);
+
+  onThemeBtnClick(theme: string): void {
+    this.themeService.setStoredTheme(theme);
+    this.themeService.setTheme(theme);
     showActiveTheme(theme, true);
+    hideOffcanvas(this.offcanvasId);
+  }
+
+  onLangBtnClick(lang: string): void {
+    this.langService.setStoredLang(lang);
+    showActiveLang(lang, true);
+    this.langService.setLang(lang);
   }
 }
 
-const getStoredTheme = (): string | null => localStorage.getItem('theme');
-const setStoredTheme = (theme: string): void => localStorage.setItem('theme', theme);
-
-const getPreferredTheme = (): string => {
-  const storedTheme = getStoredTheme();
-  if (storedTheme) {
-    return storedTheme;
-  }
-
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-};
-
-const setTheme = (theme: string): void => {
-  if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('data-bs-theme', theme);
-  }
-};
-
-setTheme(getPreferredTheme());
-
-const showActiveTheme = (theme: string, focus = false): void => {
+// theme switch
+const showActiveTheme = (theme: string, focus: boolean = false): void => {
   const themeSwitcher = document.getElementById('bd-theme');
 
   if (!themeSwitcher) {
     return;
   }
 
-  const themeSwitcherText = document.getElementById('bd-theme-text');
   const activeThemeIcon = document.querySelector('.theme-icon-active path');
   const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
   const svgOfActiveBtn = btnToActive?.querySelector('svg path')?.getAttribute('d');
@@ -65,17 +58,34 @@ const showActiveTheme = (theme: string, focus = false): void => {
   btnToActive?.classList.add('active');
   btnToActive?.setAttribute('aria-pressed', 'true');
   activeThemeIcon?.setAttribute('d', svgOfActiveBtn!);
-  const themeSwitcherLabel = `${themeSwitcherText?.textContent} (${theme})`;
-  themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
 
   if (focus) {
     themeSwitcher.focus();
   }
-};
+}
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-  const storedTheme = getStoredTheme();
-  if (storedTheme !== 'light' && storedTheme !== 'dark') {
-    setTheme(getPreferredTheme());
+// language switch
+const showActiveLang = (lang: string, focus = false): void => {
+  const langSwitcher = document.getElementById('bd-lang');
+
+  if (!langSwitcher) {
+    return;
   }
-});
+
+  const langSwitcherText = document.getElementById('bd-lang-text');
+  const btnToActive = document.querySelector(`[lang-code="${lang}"]`);
+  const textContentOfActiveBtn = btnToActive!.textContent;
+
+  document.querySelectorAll('[lang-code]').forEach(element => {
+    element.classList.remove('active');
+    element.setAttribute('aria-current', 'false');
+  })
+
+  btnToActive?.classList.add('active');
+  btnToActive?.setAttribute('aria-pressed', 'true');
+  langSwitcherText!.textContent = textContentOfActiveBtn;
+
+  if (focus) {
+    langSwitcher.focus();
+  }
+}
