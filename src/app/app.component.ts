@@ -9,7 +9,7 @@ import { LangService } from './services/lang.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Portfolio';
+  title = 'Aaron Hong';
 
   constructor(private titleService: Title, @SkipSelf() private themeService: ThemeService, @SkipSelf() private langService: LangService) {
     this.titleService.setTitle($localize`${this.title}`);
