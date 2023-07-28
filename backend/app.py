@@ -1,7 +1,7 @@
 import os
 from http import HTTPStatus
 
-from flask import Flask, request, Response, send_from_directory, render_template, redirect, url_for, session
+from flask import Flask, request, Response, send_from_directory, render_template, session
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ def index():
                 lang_code = 'zh-CN'
         else:
             lang_code = 'en-US'
-    return redirect(url_for('static_serve', lang_code=lang_code))
+    return static_serve(lang_code)
 
 @app.route('/<lang_code>')
 def static_serve(lang_code):

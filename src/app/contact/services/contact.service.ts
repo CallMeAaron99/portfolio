@@ -11,6 +11,6 @@ export class ContactService {
   constructor(private http: HttpClient) { }
 
   sendEmail(data: contact): Observable<any> {
-    return this.http.post('email', data);
+    return this.http.post('/email', data);
   }
 }

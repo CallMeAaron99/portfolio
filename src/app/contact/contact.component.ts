@@ -49,7 +49,6 @@ export class ContactComponent implements OnDestroy {
     // send email
     this.isSending = true;
     this.subscription = this.contactService.sendEmail(data).subscribe({
-      // next: () => showToast(this.toastId),
       error: (e) => {
         console.error(e);
         this.isSending = false;
