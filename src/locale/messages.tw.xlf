@@ -376,7 +376,7 @@
       </trans-unit>
       <trans-unit id="8490414350093988987" datatype="html">
         <source>Hey there! I&apos;m </source>
-        <target>您好！我是 Aaron Hong</target>
+        <target>您好！我是 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">3</context>
