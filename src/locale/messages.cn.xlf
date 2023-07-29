@@ -198,13 +198,6 @@
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1737753151350322492" datatype="html">
-        <source><x id="PH" equiv-text="this.title"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.ts</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2838582778953513957" datatype="html">
         <source>Please feel free to contact me by sending an email using the form provided below. I will get back to you as soon as possible</source>
         <target>请使用下面提供的表单发送电子邮件与我联系。我会尽快给您回复</target>

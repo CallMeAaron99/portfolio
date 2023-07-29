@@ -28,7 +28,7 @@
               "zh-CN",
               "zh-TW"
             ],
-            "outputPath": "backend/static",
+            "outputPath": "server/static",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [

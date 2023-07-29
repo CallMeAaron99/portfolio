@@ -3,8 +3,13 @@ from http import HTTPStatus
 
 from flask import Flask, request, Response, send_from_directory, render_template, session
 from flask_mail import Mail, Message
+from werkzeug.routing import BaseConverter
+
+class LangCodeConverter(BaseConverter):
+    regex = r'[a-z]{2}-[A-Z]{2}'
 
 app = Flask(__name__)
+app.url_map.converters['lang_code'] = LangCodeConverter
 app.config.from_pyfile('config.py')
 mail = Mail(app)
 
@@ -23,12 +28,12 @@ def index():
                 lang_code = 'zh-CN'
         else:
             lang_code = 'en-US'
-    return static_serve(lang_code)
+    return template_serve(lang_code)
 
-@app.route('/<lang_code>')
-def static_serve(lang_code):
+@app.route('/<lang_code:lang_code>')
+def template_serve(lang_code):
     session['lang_code'] = lang_code
-    return send_from_directory(os.path.join(static_dir, lang_code), 'index.html')
+    return render_template(lang_code + '/index.html')
 
 @app.route('/<lang_code>/<path:filename>')
 def static_files(lang_code, filename):
@@ -47,3 +52,6 @@ def send_email():
     )
     mail.send(msg)
     return Response(status=HTTPStatus.NO_CONTENT)
+
+if __import__ == '__main__':
+    app.run()
