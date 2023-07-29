@@ -35,7 +35,6 @@ testem.log
 src/assets/images/*
 src/assets/resume.pdf
 server/__pycache__
-server/static/*
 
 # System files
 .DS_Store

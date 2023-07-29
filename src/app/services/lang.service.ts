@@ -1,17 +1,20 @@
 import { Injectable } from '@angular/core';
 
+declare function getCookie(name: string): string;
+declare function setCookie(name: string, value: string, days: number): void;
+
 @Injectable({
   providedIn: 'root'
 })
 export class LangService {
 
-  getStoredLang = (): string | null => localStorage.getItem('lang');
-  setStoredLang = (lang: string): void => localStorage.setItem('lang', lang);
+  getCookieLang = (): string | null => getCookie('lang');
+  setCookieLang = (lang: string): void => setCookie('lang', lang, 7);
 
   getPreferredLang = (): string => {
-    const storedLang = this.getStoredLang();
-    if (storedLang) {
-      return storedLang;
+    const cookieLang = this.getCookieLang();
+    if (cookieLang) {
+      return cookieLang;
     }
 
     const userLanguage = navigator.language || navigator.languages[0];

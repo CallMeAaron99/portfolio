@@ -1,15 +1,15 @@
 import os
 from http import HTTPStatus
 
-from flask import Flask, request, Response, send_from_directory, render_template, session
+from flask import Flask, request, Response, send_from_directory, render_template, make_response
 from flask_mail import Mail, Message
 from werkzeug.routing import BaseConverter
 
-class LangCodeConverter(BaseConverter):
+class LangConverter(BaseConverter):
     regex = r'[a-z]{2}-[A-Z]{2}'
 
 app = Flask(__name__)
-app.url_map.converters['lang_code'] = LangCodeConverter
+app.url_map.converters['lang'] = LangConverter
 app.config.from_pyfile('config.py')
 mail = Mail(app)
 
@@ -17,27 +17,30 @@ static_dir = os.path.join(app.root_path, 'static')
 
 @app.route('/')
 def index():
-    lang_code = session.get('lang_code')
-    if not lang_code:
+    lang = request.cookies.get('lang')
+    if not lang:
         supported_languages = ["en", "zh"]
         lang = request.accept_languages.best_match(supported_languages)
         if lang == 'zh':
             if request.accept_languages[0][0] in ['zh-TW', 'zh-HK']:
-                lang_code = 'zh-TW'
+                lang = 'zh-TW'
             else:
-                lang_code = 'zh-CN'
+                lang = 'zh-CN'
         else:
-            lang_code = 'en-US'
-    return template_serve(lang_code)
+            lang = 'en-US'
+    return template_serve(lang)
 
-@app.route('/<lang_code:lang_code>')
-def template_serve(lang_code):
-    session['lang_code'] = lang_code
-    return render_template(lang_code + '/index.html')
+@app.route('/<lang:lang>')
+def template_serve(lang):
+    resp = make_response(render_template(lang + '/index.html'))
+    cookieLang = request.cookies.get('lang')
+    if not cookieLang or cookieLang != lang:
+        resp.set_cookie('lang', lang)
+    return resp
 
-@app.route('/<lang_code>/<path:filename>')
-def static_files(lang_code, filename):
-    return send_from_directory(os.path.join(static_dir, lang_code), filename)
+@app.route('/<lang>/<path:filename>')
+def static_files(lang, filename):
+    return send_from_directory(os.path.join(static_dir, lang), filename)
 
 @app.route('/email', methods=['POST'])
 def send_email():

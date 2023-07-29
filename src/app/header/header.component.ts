@@ -32,7 +32,7 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   onLangBtnClick(lang: string): void {
-    this.langService.setStoredLang(lang);
+    this.langService.setCookieLang(lang);
     showActiveLang(lang, true);
     this.langService.setLang(lang);
   }
