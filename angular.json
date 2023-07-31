@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portfolio": {
+    "portfolio": {
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
@@ -25,7 +25,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "localize": true,
-            "outputPath": "dist/Portfolio/browser",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production"
+              "browserTarget": "portfolio:build:production"
             },
             "development": {
-              "browserTarget": "Portfolio:build:development"
+              "browserTarget": "portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Portfolio:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "test": {
@@ -114,7 +114,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/Portfolio/server",
+            "outputPath": "dist/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -137,12 +137,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "Portfolio:build:development",
-              "serverTarget": "Portfolio:server:development"
+              "browserTarget": "portfolio:build:development",
+              "serverTarget": "portfolio:server:development"
             },
             "production": {
-              "browserTarget": "Portfolio:build:production",
-              "serverTarget": "Portfolio:server:production"
+              "browserTarget": "portfolio:build:production",
+              "serverTarget": "portfolio:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -156,12 +156,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "Portfolio:build:production",
-              "serverTarget": "Portfolio:server:production"
+              "browserTarget": "portfolio:build:production",
+              "serverTarget": "portfolio:server:production"
             },
             "development": {
-              "browserTarget": "Portfolio:build:development",
-              "serverTarget": "Portfolio:server:development"
+              "browserTarget": "portfolio:build:development",
+              "serverTarget": "portfolio:server:development"
             }
           },
           "defaultConfiguration": "production"

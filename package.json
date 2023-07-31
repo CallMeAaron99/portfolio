@@ -8,10 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "extract": "ng extract-i18n --output-path src/locale",
-    "dev:ssr": "ng run Portfolio:serve-ssr",
-    "serve:ssr": "node dist/Portfolio/server/main.js",
-    "build:ssr": "ng build --localize && ng run Portfolio:server",
-    "prerender": "ng run Portfolio:prerender"
+    "dev:ssr": "ng run portfolio:serve-ssr",
+    "serve:ssr": "node dist/server/main.js",
+    "build:ssr": "ng build --localize && ng run portfolio:server",
+    "prerender": "ng run portfolio:prerender"
   },
   "private": true,
   "dependencies": {

@@ -12,7 +12,7 @@ import { sendEmail } from 'email';
 
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(process.cwd(), 'dist/Portfolio/browser');
+  const distFolder = join(process.cwd(), 'dist/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   server.use(compression()); // compress all routes
