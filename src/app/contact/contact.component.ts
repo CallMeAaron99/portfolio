@@ -52,11 +52,13 @@ export class ContactComponent implements OnDestroy {
       error: (e) => {
         console.error(e);
         this.isSending = false;
+        this.submitted = false;
         this.contactForm.reset();
       },
       complete: () => {
         showToast(this.toastId);
         this.isSending = false;
+        this.submitted = false;
         this.contactForm.reset();
       }
     });
