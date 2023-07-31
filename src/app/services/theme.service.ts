@@ -20,7 +20,7 @@ export class ThemeService {
     if (this.windowStatus.ready()) {
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
-    return 'dark';
+    return 'auto';
   }
 
   setTheme = (theme: string): void => {
