@@ -1,8 +1,8 @@
 import { Component, SkipSelf, OnDestroy } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ContactService } from './services/contact.service';
-import { contact } from '../interface/contact.interface';
 import { Subscription } from 'rxjs';
+import { EmailService } from '../services/email.service';
+import { email } from '../interface/email.interface';
 
 declare function showToast(toastId: string): void;
 
@@ -28,7 +28,7 @@ export class ContactComponent implements OnDestroy {
   emailInput = this.contactForm.get('email');
   messageInput = this.contactForm.get('message');
 
-  constructor(@SkipSelf() private contactService: ContactService) { }
+  constructor(@SkipSelf() private emailService: EmailService) { }
 
   ngOnDestroy(): void {
     if (this.subscription)
@@ -40,7 +40,7 @@ export class ContactComponent implements OnDestroy {
     if (this.contactForm.invalid)
       return;
 
-    const data: contact = {
+    const data: email = {
       name: this.nameInput!.value as string,
       email: this.emailInput!.value as string,
       message: this.messageInput!.value as string
@@ -48,14 +48,16 @@ export class ContactComponent implements OnDestroy {
 
     // send email
     this.isSending = true;
-    this.subscription = this.contactService.sendEmail(data).subscribe({
+    this.subscription = this.emailService.sendEmail(data).subscribe({
       error: (e) => {
         console.error(e);
         this.isSending = false;
+        this.contactForm.reset();
       },
       complete: () => {
         showToast(this.toastId);
         this.isSending = false;
+        this.contactForm.reset();
       }
     });
   }

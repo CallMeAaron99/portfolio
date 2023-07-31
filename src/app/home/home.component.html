@@ -1,11 +1,14 @@
 <section id="home" class="home-section bg-gradient">
     <div class="container text-center home-content">
-        <h1 class="display-3 fw-bold text-body-emphasis"><ng-container i18n>Hey there! I'm </ng-container>{{ (authorInfo$ | async)?.fullName }}</h1>
+        <h1 class="display-3 fw-bold text-body-emphasis"><ng-container i18n>Hey there! I'm </ng-container>{{
+            authorInfo.fullName }}</h1>
         <div class="col-lg-8 mx-auto">
-            <p i18n class="lead lh-lg my-4 my-sm-5">A full-stack developer specializes in building complete web applications,
+            <p i18n class="lead lh-lg my-4 my-sm-5">A full-stack developer specializes in building complete web
+                applications,
                 from the frontend user interface to the backend server-side logic</p>
             <div class="d-grid d-sm-flex justify-content-center home-button-box">
-                <a href="/en-US/assets/resume.pdf" i18n-href class="btn btn-primary btn-lg px-4" target="_blank" rel="noopener">
+                <a href="/en-US/assets/resume.pdf" i18n-href class="btn btn-primary btn-lg px-4" target="_blank"
+                    rel="noopener">
                     <ng-container i18n>Resume</ng-container>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         class="bi bi-file-earmark-person ms-1" viewBox="0 0 16 16">

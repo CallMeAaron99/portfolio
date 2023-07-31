@@ -1,5 +1,6 @@
-import { Component, SkipSelf } from '@angular/core';
-import { AuthorInfoService } from '../services/author-info.service';
+import { Component } from '@angular/core';
+import authorInfoJson from '../../assets/json/authorInfo.json';
+import { authorInfo } from '../interface/authorInfo.interface';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,6 @@ import { AuthorInfoService } from '../services/author-info.service';
 })
 export class HomeComponent {
 
-  authorInfo$ = this.authorInfoService.getAuthorInfo$;
-  
-  constructor(@SkipSelf() private authorInfoService: AuthorInfoService) { }
-  
+  authorInfo: authorInfo = authorInfoJson;
+    
 }

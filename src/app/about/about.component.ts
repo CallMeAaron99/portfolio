@@ -1,5 +1,5 @@
-import { Component, SkipSelf } from '@angular/core';
-import { SkillsService } from '../services/skills.service';
+import { Component } from '@angular/core';
+import skillsJson from '../../assets/json/skills.json';
 
 @Component({
   selector: 'app-about',
@@ -8,8 +8,6 @@ import { SkillsService } from '../services/skills.service';
 })
 export class AboutComponent {
 
-  skills$ = this.skillsService.getSkills$;
-
-  constructor(@SkipSelf() private skillsService: SkillsService) { }
+  skills: string[] = skillsJson;
 
 }

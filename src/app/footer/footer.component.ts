@@ -1,5 +1,6 @@
-import { Component, SkipSelf } from '@angular/core';
-import { AuthorInfoService } from '../services/author-info.service';
+import { Component } from '@angular/core';
+import authorInfoJson from '../../assets/json/authorInfo.json';
+import { authorInfo } from '../interface/authorInfo.interface';
 
 @Component({
   selector: 'app-footer',
@@ -8,8 +9,6 @@ import { AuthorInfoService } from '../services/author-info.service';
 })
 export class FooterComponent {
 
-  authorInfo$ = this.authorInfoService.getAuthorInfo$;
+  authorInfo: authorInfo = authorInfoJson;
   
-  constructor(@SkipSelf() private authorInfoService: AuthorInfoService) { }
-
 }

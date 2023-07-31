@@ -8,7 +8,7 @@
                 live demos and source code on GitHub</p>
         </div>
         <div class="row g-5">
-            <div *ngFor="let project of projects$ | async" class="col-md-6 col-lg-4">
+            <div *ngFor="let project of projects" class="col-md-6 col-lg-4">
                 <div class="card">
                     <img [src]="project.image" class="card-img-top object-fit-scale" alt="thumbnail" i18n-alt>
                     <div class="card-body">

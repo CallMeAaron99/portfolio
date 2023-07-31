@@ -1,7 +1,9 @@
 import { AfterViewInit, Component, SkipSelf } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 import { LangService } from '../services/lang.service';
-import { AuthorInfoService } from '../services/author-info.service';
+import authorInfoJson from '../../assets/json/authorInfo.json';
+import { authorInfo } from '../interface/authorInfo.interface';
+import { WindowStatus } from '../services/browser.service';
 
 declare function hideOffcanvas(offcanvasId: string): void;
 
@@ -13,11 +15,14 @@ declare function hideOffcanvas(offcanvasId: string): void;
 export class HeaderComponent implements AfterViewInit {
 
   offcanvasId: string = 'bdNavbar';
-  authorInfo$ = this.authorInfoService.getAuthorInfo$;
+  authorInfo: authorInfo = authorInfoJson;
 
-  constructor(@SkipSelf() private themeService: ThemeService, @SkipSelf() private langService: LangService, @SkipSelf() private authorInfoService: AuthorInfoService) { }
+  constructor(@SkipSelf() private themeService: ThemeService, @SkipSelf() private langService: LangService, @SkipSelf() private windowStatus: WindowStatus) { }
 
   ngAfterViewInit(): void {
+    if (!this.windowStatus.ready()) {
+      return;
+    }
     showActiveTheme(this.themeService.getPreferredTheme());
     showActiveLang(this.langService.getPreferredLang());
   }

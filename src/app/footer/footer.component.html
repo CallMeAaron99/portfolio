@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer-top row g-3 justify-content-between border-bottom py-5">
             <div class="col-md-5">
-                <h4>{{ (authorInfo$ | async)?.fullName }}</h4>
+                <h4>{{ authorInfo.fullName }}</h4>
                 <p i18n class="lead">A full-stack developer specializes in building complete web applications</p>
             </div>
             <div class="col-md-3">
@@ -20,7 +20,7 @@
         <div class="footer-bottom text-center py-5">
             © Copyright 2023. Made by
             <a class="link-light link-offset-2 link-underline-opacity-50 link-underline-opacity-100-hover"
-                ref="noreferrer" target="_blank" [href]="(authorInfo$ | async)?.authorURL">{{ (authorInfo$ | async)?.fullName }}</a>
+                ref="noreferrer" target="_blank" [href]="authorInfo.authorURL">{{ authorInfo.fullName }}</a>
         </div>
     </div>
 </footer>

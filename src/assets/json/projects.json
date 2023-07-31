@@ -7,8 +7,8 @@
             "Java",
             "React"
         ],
-        "demoLink": "",
-        "codeLink": ""
+        "demoLink": "#",
+        "codeLink": "#"
     },
     {
         "name": "blog",
@@ -18,8 +18,8 @@
             "Java",
             "React"
         ],
-        "demoLink": "",
-        "codeLink": ""
+        "demoLink": "#",
+        "codeLink": "#"
     },
     {
         "name": "blog",
@@ -29,7 +29,7 @@
             "Java",
             "React"
         ],
-        "demoLink": "",
-        "codeLink": ""
+        "demoLink": "#",
+        "codeLink": "#"
     }
 ]
