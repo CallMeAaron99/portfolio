@@ -1,6 +1,10 @@
 # portfolio
 
-This project
+This portfolio project is developed using Angular, use to showcase your skills and projects.
+
+# Install node and angular cli
+
+For installation of Node on Debian and Ubuntu based Linux distributions, please refer to `https://github.com/nodesource/distributions`. Once Node is installed, run the command `sudo npm install -g @angular/cli` to install the Angular CLI.
 
 ## Development server
 
@@ -8,15 +12,15 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. Ensure t
 
 ## Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/browser` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/browser` directory
 
 ## Build (ssr)
 
-Run `npm run build:ssr` to build the project for server side rendering. The server start JavaScript file will be located in the `dist/server` directory and named `main.js`. To start a development server, run `npm run serve:ssr`.
+Run `npm run build:ssr` to build the project for server side rendering. The server start JavaScript file will be located in the `dist/server` directory and named `main.js`. To start a development server, run `npm run serve:ssr`
 
 ## Extract translation
 
-Run `npm run extract` to extract the translation file. The file will be stored in the `src/locale` directory and named `messages.xlf`.
+Run `npm run extract` to extract the translation file. The file will be stored in the `src/locale` directory and named `messages.xlf`
 
 ## Deloying to production
 
