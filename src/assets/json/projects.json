@@ -1,35 +1,33 @@
 [
     {
-        "name": "blog",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam laboriosam deleniti fugit suscipit ab rerum aliquam quae nesciunt iure nemo sit, eum sequi totam quis autem amet asperiores maiores.",
-        "image": "assets/images/Java_programming_language_logo.svg.png",
+        "name": "Blogging platform",
+        "description": "A blogging website that allows users to sign up with just a username and password. Once registered, users can create new posts with a title, content, image, and tags. The homepage features a search bar that supports fuzzy search for blog titles and content, as well as a tag list for filtering blogs.",
+        "image": "assets/images/blog.png",
         "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
             "Java",
-            "React"
+            "SpringBoot",
+            "MySQL"
         ],
-        "demoLink": "#",
-        "codeLink": "#"
+        "demoLink": "https://blog.aaronhong.net",
+        "codeLink": "https://github.com/aaronhong69/Spring-Boot-Blog"
     },
     {
-        "name": "blog",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam laboriosam deleniti fugit suscipit ab rerum aliquam quae nesciunt iure nemo sit, eum sequi totam quis autem amet asperiores maiores.",
-        "image": "assets/images/Python-logo-notext.svg.png",
+        "name": "aaronhong.net",
+        "description": "A portfolio website with four sections: Home, About, Projects, and Contact. It supports three languages: English, Simplified Chinese, and Traditional Chinese. Additionally, the website features both dark and light themes.",
+        "image": "assets/images/portfolio.png",
         "tools": [
-            "Java",
-            "React"
+            "HTML",
+            "SASS",
+            "TypeScript",
+            "Angular",
+            "Node.js",
+            "Express.js"
         ],
-        "demoLink": "#",
-        "codeLink": "#"
-    },
-    {
-        "name": "blog",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam laboriosam deleniti fugit suscipit ab rerum aliquam quae nesciunt iure nemo sit, eum sequi totam quis autem amet asperiores maiores.",
-        "image": "assets/images/4646842.png",
-        "tools": [
-            "Java",
-            "React"
-        ],
-        "demoLink": "#",
-        "codeLink": "#"
+        "demoLink": "https://aaronhong.net",
+        "codeLink": "https://github.com/aaronhong69/portfolio"
     }
 ]
