@@ -12,37 +12,43 @@
             <form [formGroup]="contactForm" (ngSubmit)="onEmailSubmit()" class="row g-3">
                 <div class="col-12">
                     <div class="form-floating">
-                        <input type="text" placeholder="Name" formControlName="name" id="inputFirstName"
+                        <input type="text" placeholder="Name" formControlName="name" id="name"
                             [ngClass]="{'form-control': true, 'is-invalid': nameInput?.invalid && (submitted || !nameInput?.pristine)}">
-                        <label i18n *ngIf="nameInput?.pristine && !submitted || nameInput?.valid"
-                            for="inputFirstName">Name</label>
-                        <label i18n *ngIf="nameInput?.invalid && (submitted || !nameInput?.pristine)"
-                            for="inputFirstNameInvalid">Please enter your name</label>
+                        <label for="name">
+                            <ng-container i18n
+                                *ngIf="nameInput?.pristine && !submitted || nameInput?.valid">Name</ng-container>
+                            <ng-container i18n *ngIf="nameInput?.invalid && (submitted || !nameInput?.pristine)">Please
+                                enter your name</ng-container>
+                        </label>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-floating">
                         <input type="email" placeholder="Enter your Email" formControlName="email" id="email"
                             [ngClass]="{'form-control': true, 'is-invalid': emailInput?.invalid && (submitted || !emailInput?.pristine)}">
-                        <label i18n *ngIf="emailInput?.pristine && !submitted || emailInput?.valid" for="email">Email
-                            address</label>
-                        <label i18n
-                            *ngIf="contactForm.get('email')?.errors?.['required'] && (submitted || !emailInput?.pristine)"
-                            for="emailInvalid">Please enter your email</label>
-                        <label i18n
-                            *ngIf="contactForm.get('email')?.errors?.['email'] && (submitted || !emailInput?.pristine)"
-                            for="emailFormatInvalid">Email format
-                            invalid</label>
+                        <label for="email">
+                            <ng-container i18n *ngIf="emailInput?.pristine && !submitted || emailInput?.valid">Email
+                                address</ng-container>
+                            <ng-container i18n
+                                *ngIf="contactForm.get('email')?.errors?.['required'] && (submitted || !emailInput?.pristine)">Please
+                                enter your email</ng-container>
+                            <ng-container i18n
+                                *ngIf="contactForm.get('email')?.errors?.['email'] && (submitted || !emailInput?.pristine)">Email
+                                format invalid</ng-container>
+                        </label>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="form-floating">
                         <textarea placeholder="Enter your message" formControlName="message" id="message"
                             [ngClass]="{'form-control': true, 'is-invalid': messageInput?.invalid && (submitted || !messageInput?.pristine)}"></textarea>
-                        <label i18n *ngIf="messageInput?.pristine && !submitted || messageInput?.valid"
-                            for="message">Message</label>
-                        <label i18n *ngIf="messageInput?.invalid && (submitted || !messageInput?.pristine)"
-                            for="messageInvalid">Please enter your message</label>
+                        <label for="message">
+                            <ng-container i18n
+                                *ngIf="messageInput?.pristine && !submitted || messageInput?.valid">Message</ng-container>
+                            <ng-container i18n
+                                *ngIf="messageInput?.invalid && (submitted || !messageInput?.pristine)">Please enter
+                                your message</ng-container>
+                        </label>
                     </div>
                 </div>
                 <div class="text-center d-grid mt-4">
