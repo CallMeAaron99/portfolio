@@ -23,8 +23,8 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2589895786754244834" datatype="html">
-        <source>I&apos;m a </source>
+      <trans-unit id="329463062588693" datatype="html">
+        <source>I am a </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">13</context>
@@ -74,22 +74,22 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8545725361065754086" datatype="html">
-        <source> section.</source>
+      <trans-unit id="8394945818892932857" datatype="html">
+        <source> section</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="898646336251277527" datatype="html">
-        <source>I&apos;m open to </source>
+      <trans-unit id="8140386028055938828" datatype="html">
+        <source>I am open to </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1895957424873987405" datatype="html">
-        <source>Job</source>
+      <trans-unit id="2777860068763666784" datatype="html">
+        <source>Job </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">27</context>
@@ -128,8 +128,8 @@
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2405261957659302616" datatype="html">
-        <source> me.</source>
+      <trans-unit id="2283506543137127549" datatype="html">
+        <source> me</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
           <context context-type="linenumber">39</context>
@@ -157,25 +157,18 @@
         <source>Resume</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8060976976079359371" datatype="html">
-        <source>.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/about/about.component.html</context>
-          <context context-type="linenumber">50</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="634390376712343582" datatype="html">
         <source>My Skills</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/about/about.component.html</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2838582778953513957" datatype="html">

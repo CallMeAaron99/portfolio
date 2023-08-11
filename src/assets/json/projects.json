@@ -1,7 +1,7 @@
 [
     {
         "name": "Blogging platform",
-        "description": "A blogging website that allows users to sign up with just a username and password. Once registered, users can create new posts with a title, content, image, and tags. The homepage features a search bar that supports fuzzy search for blog titles and content, as well as a tag list for filtering blogs.",
+        "description": "A blogging website where users can sign up with a username and password, create posts with a title, content, image, and tags. The homepage has a search bar for blog titles and content, and a tag list to filter blogs",
         "image": "assets/images/blog.png",
         "tools": [
             "HTML",
@@ -17,7 +17,7 @@
     },
     {
         "name": "aaronhong.net",
-        "description": "A portfolio website with four sections: Home, About, Projects, and Contact. It supports three languages: English, Simplified Chinese, and Traditional Chinese. Additionally, the website features both dark and light themes.",
+        "description": "A portfolio website with Home, About, Projects, and Contact sections. It supports English, Simplified Chinese, and Traditional Chinese languages and has both dark and light themes",
         "image": "assets/images/portfolio.png",
         "tools": [
             "HTML",

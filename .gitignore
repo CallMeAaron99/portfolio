@@ -32,8 +32,6 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-src/assets/images/*
-src/assets/resume.pdf
 
 # System files
 .DS_Store
