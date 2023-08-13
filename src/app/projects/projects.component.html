@@ -9,16 +9,27 @@
         </div>
         <div class="card-group">
             <div *ngFor="let project of projects" class="card bg-secondary-subtle">
-                <img [src]="project.image" class="card-img-top object-fit-scale" alt="thumbnail" i18n-alt>
-                <div class="card-body">
-                    <h5 class="card-title">{{project.name}}</h5>
-                    <p class="card-text">{{project.description}}</p>
-                </div>
-                <div class="card-footer border-0">
-                    <div class="tools">
-                        <div *ngFor="let tool of project.tools"
-                            class="tools--tool rounded-pill bg-body-secondary fs-6 fw-medium">
-                            {{tool}}</div>
+                <div class="position-relative">
+                    <img [src]="project.image" class="card-img-top object-fit-scale" alt="thumbnail" i18n-alt>
+                    <div class="card-body">
+                        <a [href]="project.demoLink"
+                            class="h5 text-decoration-none icon-link gap-1 icon-link-hover stretched-link"
+                            target="_blank" rel="noopener">
+                            {{project.name}}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <p class="card-text">{{project.description}}</p>
+                    </div>
+                    <div class="card-footer border-0">
+                        <div class="tools">
+                            <div *ngFor="let tool of project.tools"
+                                class="tools--tool rounded-pill bg-body-secondary fs-6 fw-medium">
+                                {{tool}}</div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-footer gap-5 d-flex justify-content-center border-0 bg-transparent">
