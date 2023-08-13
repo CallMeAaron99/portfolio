@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import projectsJson from '../../assets/json/projects.json';
-import { Project } from '../interface/projects.interface';
+import { Component, SkipSelf } from '@angular/core';
+import { ProjectsService } from '../services/projects.service';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent{
+export class ProjectsComponent {
 
-  projects: Project[] = projectsJson;
+  projects$ = this.projectService.getProjects$;
+
+  constructor(@SkipSelf() private projectService: ProjectsService) { }
 
 }
