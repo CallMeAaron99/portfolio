@@ -1,6 +1,6 @@
 # portfolio
 
-This portfolio project is developed using Angular, use to showcase your skills and projects.
+This portfolio project is developed using Angular, use to showcase your skills and projects. Live link: https://aaronhong.net
 
 # Install node and angular cli
 
