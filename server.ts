@@ -5,6 +5,8 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
+import https from 'https';
+import fs from 'fs';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
@@ -17,7 +19,7 @@ export function app(): express.Express {
 
   server.use(compression()); // compress all routes
   server.use(cookieParser());
-  
+
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule
   }));
@@ -72,11 +74,22 @@ export function app(): express.Express {
 function run(): void {
   const port = process.env['PORT'] || 4000;
 
+  // Load SSL certificate
+  // const options = {
+  //   key: fs.readFileSync('portfolio.key'),
+  //   cert: fs.readFileSync('portfolio.cert')
+  // }
+
   // Start up the Node server
   const server = app();
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
+
+  // Create an HTTPS server and pass in the Express app
+  // https.createServer(options, server).listen(port, () => {
+  //   console.log(`Node Express server listening on https://localhost:${port}`);
+  // });
 }
 
 // Webpack will replace 'require' with '__webpack_require__'
