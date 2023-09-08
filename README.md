@@ -1,6 +1,6 @@
 # portfolio
 
-This portfolio project is developed using Angular, use to showcase your skills and projects.
+A portfolio website built with **Angular** and **Express.js**. Live link: https://aaronhong.net
 
 # Install node and angular cli
 
