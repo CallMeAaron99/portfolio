@@ -1,7 +1,23 @@
 [
     {
+        "name": "Shopping website",
+        "description": "An e-commerce website where users can browse products, add them to a cart, and check out",
+        "image": "assets/images/shop.png",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js",
+            "Python",
+            "Django",
+            "MySQL"
+        ],
+        "demoLink": "https://shop.aaronhong.net",
+        "codeLink": "https://github.com/aaronhong69/shop"
+    },
+    {
         "name": "Blogging platform",
-        "description": "A blogging website where users can sign up with a username and password, create posts with a title, content, image, and tags. The homepage has a search bar for blog titles and content, and a tag list to filter blogs",
+        "description": "A blogging website where users can create posts with a title, content, image, and tags. The homepage has a search bar for blog titles and content, and a tag list to filter blogs",
         "image": "assets/images/blog.png",
         "tools": [
             "HTML",
@@ -16,7 +32,7 @@
         "codeLink": "https://github.com/aaronhong69/Spring-Boot-Blog"
     },
     {
-        "name": "aaronhong.net",
+        "name": "Portfolio",
         "description": "A portfolio website with Home, About, Projects, and Contact sections. It supports English, Simplified Chinese, and Traditional Chinese languages and has both dark and light themes",
         "image": "assets/images/portfolio.png",
         "tools": [
