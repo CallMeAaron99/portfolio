@@ -26,7 +26,7 @@ Run `npm run extract` to extract the translation file. The file will be stored i
 
 Create porfolio service `sudo vi /etc/systemd/system/portfolio.service`. Tip for vi global replace `:%s/<username>/your_username/g`
 
-```
+```shell
 [Unit]
 Description=Node.js serve for portfolio app
 After=network.target
@@ -48,7 +48,7 @@ WantedBy=multi-user.target
 
 Enable portfolio service
 
-```
+```shell
 sudo systemctl daemon-reload
 sudo systemctl start portfolio
 sudo systemctl enable portfolio
@@ -56,7 +56,7 @@ sudo systemctl enable portfolio
 
 Create nginx config `sudo vi /etc/nginx/sites-available/portfolio`
 
-```
+```shell
 server {
     listen 80;
     server_name <IP address or domain name>;
@@ -83,7 +83,7 @@ server {
 
 soft link conf file and restart nginx
 
-```
+```shell
 sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
