@@ -54,16 +54,29 @@ sudo systemctl start portfolio
 sudo systemctl enable portfolio
 ```
 
-Create nginx config `sudo vi /etc/nginx/sites-available/portfolio.conf`
+Create nginx config `sudo vi /etc/nginx/sites-available/portfolio`
 
 ```
 server {
     listen 80;
-    server_name <Your IP address or domain name>;
+    server_name <IP address or domain name>;
+
+    return 301 https://$server_name$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name <IP address or domain name>;
+
+    error_log /home/ubuntu/portfolio/error.log;
+    access_log /home/ubuntu/portfolio/access.log;
+
+    ssl_certificate <Path to cert>;
+    ssl_certificate_key <Path to key>;
 
     location / {
         include proxy_params;
-        proxy_pass http://localhost:8000;
+        proxy_pass <Port or Stock>;
     }
 }
 ```
@@ -71,6 +84,6 @@ server {
 soft link conf file and restart nginx
 
 ```
-sudo ln -s /etc/nginx/sites-available/portfolio.conf /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
 ```
