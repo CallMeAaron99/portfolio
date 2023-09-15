@@ -1,6 +1,6 @@
 [
     {
-        "name": "Shopping website",
+        "name": "Shopping Website",
         "description": "An e-commerce website where users can browse products, add them to a cart, and check out",
         "image": "assets/images/shop.png",
         "tools": [
@@ -16,7 +16,7 @@
         "codeLink": "https://github.com/aaronhong69/shop"
     },
     {
-        "name": "Blogging platform",
+        "name": "Blogging Platform",
         "description": "A blogging website where users can create posts with a title, content, image, and tags. The homepage has a search bar for blog titles and content, and a tag list to filter blogs",
         "image": "assets/images/blog.png",
         "tools": [
@@ -44,6 +44,6 @@
             "Express.js"
         ],
         "demoLink": "https://aaronhong.net",
-        "codeLink": "https://github.com/aaronhong69/portfolio"
+        "codeLink": "https://github.com/aaronhong247/portfolio"
     }
 ]
