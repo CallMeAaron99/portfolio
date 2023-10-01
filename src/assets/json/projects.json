@@ -11,7 +11,7 @@
             "Python",
             "Django",
             "PostgreSQL",
-            "NGINX"
+            "Nginx"
         ],
         "demoLink": "https://shop.aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/shop"
@@ -28,7 +28,7 @@
             "Java",
             "Spring Boot",
             "MySQL",
-            "NGINX"
+            "Nginx"
         ],
         "demoLink": "https://blog.aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/Spring-Boot-Blog"
@@ -45,7 +45,7 @@
             "Node.js",
             "Express.js",
             "Docker",
-            "NGINX"
+            "Nginx"
         ],
         "demoLink": "https://aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/portfolio"
