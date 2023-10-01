@@ -81,9 +81,23 @@ server {
 }
 ```
 
-soft link conf file and restart nginx
+Soft link conf file and restart nginx
 
 ```shell
 sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
+```
+
+## Using Docker
+
+Build the image from Dockerfile
+
+```shell
+docker build -t username/portfolio:1.0 .
+```
+
+Run the container
+
+```shell
+docker run -p 8000:8000 <IMAGE ID>
 ```
