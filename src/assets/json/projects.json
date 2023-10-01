@@ -10,7 +10,8 @@
             "Vue.js",
             "Python",
             "Django",
-            "MySQL"
+            "PostgreSQL",
+            "NGINX"
         ],
         "demoLink": "https://shop.aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/shop"
@@ -25,8 +26,9 @@
             "JavaScript",
             "React",
             "Java",
-            "SpringBoot",
-            "MySQL"
+            "Spring Boot",
+            "MySQL",
+            "NGINX"
         ],
         "demoLink": "https://blog.aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/Spring-Boot-Blog"
@@ -37,11 +39,13 @@
         "image": "assets/images/portfolio.png",
         "tools": [
             "HTML",
-            "SASS",
+            "SCSS",
             "TypeScript",
             "Angular",
             "Node.js",
-            "Express.js"
+            "Express.js",
+            "Docker",
+            "NGINX"
         ],
         "demoLink": "https://aaronhong.net",
         "codeLink": "https://github.com/aaronhong247/portfolio"
