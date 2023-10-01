@@ -8,7 +8,7 @@
                 live demos and source code on GitHub</p>
         </div>
         <div class="card-group">
-            <div *ngFor="let project of projects$ | async" class="card bg-secondary-subtle">
+            <div *ngFor="let project of projects" class="card bg-secondary-subtle">
                 <img [src]="project.image" class="card-img-top object-fit-scale" alt="thumbnail" i18n-alt>
                 <div class="card-body">
                     <a [href]="project.demoLink"
